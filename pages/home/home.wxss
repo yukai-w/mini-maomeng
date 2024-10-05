@@ -1,0 +1,140 @@
+.p40 {
+  padding: 0 40rpx;
+}
+.pt50 {
+  padding-top: 50rpx;
+}
+.mb40 {
+  margin-bottom: 40rpx;
+}
+.mt40 {
+  margin-top: 40rpx;
+}
+.pl40 {
+  padding-left: 40rpx;
+}
+.mt24 {
+  margin-top: 24rpx;
+}
+.banner {
+  position: relative;
+  z-index: 1;
+}
+.projectImg {
+  /* 圆形图片 */
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.projectTitle {
+  /* 居中 */
+  text-align: center;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  /* 伪元素宽度和 .banner 一样 */
+  height: 289rpx;
+  /* 伪元素高度和 .banner 一样 */
+  background-color: black;
+  /* 伪元素的背景色 */
+}
+.banner swiper {
+  height: 320rpx !important;
+}
+.banner swiper .wx-swiper-dots {
+  position: absolute;
+  left: unset !important;
+  right: 30rpx;
+}
+.banner swiper .wx-swiper-dot,
+.banner swiper .wx-swiper-dot-active {
+  /* 点的未选中样式 */
+  width: 12rpx;
+  height: 5rpx;
+  border-radius: 15.625px;
+}
+.banner swiper .swiperItem image {
+  width: 100%;
+  height: 100%;
+}
+.publicWelfare swiper {
+  height: 320rpx !important;
+}
+.publicWelfare swiper .swiperItem {
+  width: 240px;
+}
+.publicWelfare swiper .swiperItem image {
+  width: 240rpx;
+  height: 240rpx;
+}
+.publicWelfare swiper .swiperItem .play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 94.5rpx;
+  height: 94.5rpx;
+}
+.thirteenCats {
+  margin-top: 40rpx;
+}
+.thirteenCats ._thirteenCats {
+  margin-top: 24rpx;
+  width: 100%;
+  height: 238rpx;
+}
+.new {
+  margin-top: 24rpx;
+}
+.new .newItem {
+  display: flex;
+  margin-bottom: 32rpx;
+}
+.new .newItem .newItemLeft {
+  width: 270rpx;
+  height: 200rpx;
+  margin-right: 24rpx;
+}
+.new .newItem .newItemLeft image {
+  width: 100%;
+  height: 100%;
+}
+.new .newItem .newItemRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.new .newItem .newItemRight .title {
+  color: #333;
+  font-family: Alibaba PuHuiTi 2;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.new .newItem .newItemRight .status {
+  display: flex;
+  justify-content: space-between;
+  color: #AAA;
+  font-family: Alibaba PuHuiTi 2;
+  font-size: 20rpx;
+  letter-spacing: -0.4rpx;
+}
+.new .newItem .newItemRight .status view {
+  display: flex;
+  align-items: center;
+}
+.new .newItem .newItemRight .status .eye {
+  margin-right: 4rpx;
+  width: 39rpx;
+  height: 23rpx;
+}
+.new .newItem .newItemRight .status .remark {
+  margin-right: 4rpx;
+  width: 39rpx;
+  height: 27rpx;
+}

@@ -1,0 +1,35 @@
+.nav-bar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  color: #fff;
+  background-color: #121212;
+}
+
+.nav-bar .search {
+  width: 490rpx;
+  color: #333;
+  font-size: 28rpx;
+  position: absolute;
+  background: #ddd;
+  border-radius: 16rpx;
+  border: 2rpx solid #FFF;
+  overflow: hidden;
+}
+
+.nav-bar .search .van-search {
+  padding: 0;
+}
+
+.nav-bar .search .van-search .van-search__content {
+  background-color: inherit;
+}
+
+.nav-bar .search .van-search .van-search__content .van-field__control {
+  color: #fff;
+}
+
+.nav-bar .search .van-search .van-search__content .van-cell__left-icon-wrap {
+  display: none;
+}

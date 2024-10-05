@@ -1,0 +1,83 @@
+.login {
+	padding: 275.93rpx 60rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.logo {
+		display: block;
+		width: 259.499rpx;
+		height: 178.1rpx;
+
+	}
+
+	.loginBtn {
+		margin-top: 208.97rpx;
+		width: 100%;
+		height: 105rpx;
+		display: flex;
+		align-items: center;
+
+		.van-button {
+			border-radius: 12rpx;
+			height: 100%;
+			width: 100%;
+
+			.van-button__text {
+				display: flex;
+				align-items: center;
+			}
+		}
+
+		.wechat {
+			width: 49rpx;
+			height: 49rpx;
+			margin-right: 20rpx;
+		}
+
+		.text {
+			color: #FFF;
+			font-family: "Alibaba PuHuiTi 2.0";
+			font-size: 32rpx;
+			font-weight: 500;
+		}
+	}
+
+	/* 自定义 radio 样式 */
+	radio {
+		margin-top: 40rpx;
+		color: #AAA;
+		font-family: "Alibaba PuHuiTi 2.0";
+		font-size: 25rpx;
+
+		.wx-radio-input {
+			border-radius: 50%;
+			width: 28rpx;
+			height: 28rpx;
+		}
+
+		/* 选中后的样式 （可根据需求自己修改） */
+		.wx-radio-input-checked::before {
+			border-radius: 50%;
+			width: 44rpx;
+			height: 44rpx;
+			line-height: 44rpx;
+			text-align: center;
+			font-size: 28rpx;
+			/* 对勾大小 */
+			color: #fff;
+			/* 对勾颜色 */
+			background: #FFD430;
+			border-color: #FFD430;
+		}
+
+		// 政策协议样式
+		text {
+			color: #FFD430;
+			font-family: "Alibaba PuHuiTi 2.0";
+			font-size: 25rpx;
+			font-weight: 500;
+		}
+	}
+
+}

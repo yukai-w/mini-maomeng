@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+	<image class="logo" src="/images/logo.png" mode="" />
+	<van-button open-type="getUserInfo" bindgetuserinfo="getUserProfile" class="loginBtn" type="primary">
+		<image class="wechat" src="/images/wechat.png" mode="" />
+		<text class="text">微信授权登录</text>
+	</van-button>
+	<view bindtap='checkedTap'>
+		<radio checked="{{checked}}">我已阅读并同意<text>《平台隐私政策》</text>及<text>《用户隐私协议》</text>
+		</radio>
+	</view>
+</view>

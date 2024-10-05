@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/publicWelfare/publicWelfare",
+    "pages/thirteenCats/thirteenCats",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#121212"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "selectedIconPath": "/images/home-active.png",
+        "iconPath": "/images/home.png"
+      },
+      {
+        "pagePath": "pages/publicWelfare/publicWelfare",
+        "text": "公益",
+        "selectedIconPath": "/images/publicWelfare-active.png",
+        "iconPath": "/images/publicWelfare.png"
+      },
+      {
+        "pagePath": "pages/thirteenCats/thirteenCats",
+        "text": "十二猫",
+        "selectedIconPath": "/images/thirteenCats-active.png",
+        "iconPath": "/images/thirteenCats.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "selectedIconPath": "/images/my-active.png",
+        "iconPath": "/images/my.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

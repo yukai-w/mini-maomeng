@@ -1,0 +1,181 @@
+.p40 {
+	padding: 0 40rpx;
+
+
+}
+
+.pt50 {
+	padding-top: 50rpx;
+}
+
+.mb40 {
+	margin-bottom: 40rpx;
+}
+
+.mt40 {
+	margin-top: 40rpx;
+}
+
+.pl40 {
+	padding-left: 40rpx;
+}
+
+.mt24 {
+	margin-top: 24rpx;
+}
+
+// banner
+.banner {
+	position: relative;
+	z-index: 1;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: -1;
+		/* 伪元素宽度和 .banner 一样 */
+		height: 289rpx;
+		/* 伪元素高度和 .banner 一样 */
+		background-color: black;
+		/* 伪元素的背景色 */
+	}
+
+	swiper {
+		height: 320rpx !important;
+
+		.wx-swiper-dots {
+			position: absolute;
+			left: unset !important;
+			right: 30rpx;
+		}
+
+		.wx-swiper-dot,
+		.wx-swiper-dot-active {
+
+			/* 点的未选中样式 */
+			& {
+				width: 12rpx;
+				height: 5rpx;
+				border-radius: 15.625px;
+			}
+		}
+
+		.swiperItem {
+			image {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+// 公益项目
+.publicWelfare {
+	swiper {
+		height: 320rpx !important;
+
+		.swiperItem {
+			width: 240px;
+
+			image {
+				width: 240rpx;
+				height: 100%;
+			}
+
+			.play {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 94.5rpx;
+				height: 94.5rpx;
+			}
+		}
+	}
+}
+
+// 十三猫
+.thirteenCats {
+	margin-top: 40rpx;
+
+	// swiper {
+	// 	height: 96rpx !important;
+
+	// 	.thirteenCatsSwiperItem {
+
+	// 		image {
+	// 			width: 96rpx;
+	// 			height: 100%;
+	// 		}
+	// 	}
+	// }
+	._thirteenCats {
+		margin-top: 24rpx;
+		width: 100%;
+		height: 238rpx;
+	}
+}
+
+.new {
+	margin-top: 24rpx;
+
+	.newItem {
+		display: flex;
+		margin-bottom: 32rpx;
+
+		.newItemLeft {
+			width: 270rpx;
+			height: 200rpx;
+			margin-right: 24rpx;
+
+			image {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.newItemRight {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+			.title {
+				color: #333;
+				font-family: Alibaba PuHuiTi 2.0;
+				font-size: 32rpx;
+				font-weight: 500;
+			}
+
+			.status {
+				display: flex;
+				justify-content: space-between;
+				color: #AAA;
+				font-family: Alibaba PuHuiTi 2.0;
+				font-size: 20rpx;
+				letter-spacing: -0.4rpx;
+
+				view {
+					display: flex;
+					align-items: center;
+				}
+
+				.eye {
+					margin-right: 4rpx;
+					width: 39rpx;
+					height: 23rpx;
+				}
+
+				.remark {
+					margin-right: 4rpx;
+					width: 39rpx;
+					height: 27rpx;
+				}
+
+			}
+		}
+	}
+}

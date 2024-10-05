@@ -1,0 +1,60 @@
+/* components/water-fall/water-fall.wxss */
+.wrapper {
+  padding: 15rpx 0;
+}
+.wrapper .waterfall {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrapper .waterfall .column {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  word-break: break-all;
+}
+.wrapper .waterfall .column .item {
+  width: 315rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+.wrapper .waterfall .column .item .pic {
+  position: relative;
+  width: 100%;
+  border-radius: 20rpx;
+  box-shadow: 0 3rpx 4rpx rgba(0, 0, 0, 0.2);
+}
+.wrapper .waterfall .column .item .pic::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  /* 调整遮罩层的高度 */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 60.12%);
+}
+.wrapper .waterfall .column .item .text {
+  position: absolute;
+  bottom: 10rpx;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Alibaba PuHuiTi 2.0";
+  font-size: 20rpx;
+}
+.wrapper .waterfall .column .item .text .title {
+  padding-left: 15.75rpx;
+  color: #FFF;
+  font-family: "Alibaba PuHuiTi 2.0";
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.wrapper .waterfall .column .item .text .multilineText {
+  padding: 0 12rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}

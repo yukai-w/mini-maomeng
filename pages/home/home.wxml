@@ -1,0 +1,71 @@
+<!--pages/home/home.wxml-->
+<!-- 自定义导航栏 -->
+<navigation-bar searchValue="{{homeSearchValue}}"></navigation-bar>
+<!-- banner -->
+<view class="p40 pt50 mb40 banner">
+	<swiper indicator-dots indicator-color="#FFF" indicator-active-color="#FFD430" interval="2000" duration="500" circular>
+		<block wx:for="{{bannerList}}" wx:key="index">
+			<swiper-item class="swiperItem">
+				<image src="{{baseUrl + item.image}}" mode="" />
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+<view class="pl40 publicWelfare">
+	<!-- 公益项目 -->
+	<my-card text="公益项目" isShow="true">
+		<swiper class="mt24" wx:if="{{publicWelfareList.length > 0}}" display-multiple-items="2.7">
+			<block wx:for="{{publicWelfareList}}" wx:key="id">
+				<swiper-item class="swiperItem">
+					<image class="projectImg" src="{{baseUrl + item.homepageImage}}" mode="" />
+					<view class="projectTitle">{{item.projectName}}</view>
+					<!-- 播放按钮 -->
+					<!-- <image src="/images/play.png" class="play" mode="" /> -->
+				</swiper-item>
+			</block>
+		</swiper>
+	</my-card>
+
+
+</view>
+<!-- 十三猫 -->
+<view class="thirteenCats p40">
+	<my-card text="十三猫">
+		<!-- <swiper class="mt24" display-multiple-items="4.5" wx:if="{{thirteenCatsList.length > 0}}">
+				<block wx:for="{{thirteenCatsList}}" wx:key="id">
+					<swiper-item class="thirteenCatsSwiperItem">
+						<image src="{{baseUrl + item.distributionMap}}" mode="" />
+					</swiper-item>
+				</block>
+			</swiper> -->
+		<image class="_thirteenCats" src="/images/_thirteenCats.png" />
+	</my-card>
+</view>
+<!-- 最新资讯 -->
+
+<view class="p40 mt40">
+	<my-card text="最新资讯">
+		<view class="new">
+			<view class="newItem" wx:for="{{newList}}" wx:key="id">
+				<view class="newItemLeft">
+					<image src="{{baseUrl + item.mainImage}}" mode="" />
+				</view>
+				<view class="newItemRight">
+					<view class="title">{{item.title}}</view>
+					<view class="status">
+						<view>
+							<image class="eye" src="/images/eye.png" mode="heightFix" />
+							346
+						</view>
+
+						<view>
+							<image src="/images/remark.png" class="remark" mode="" />
+							346
+						</view>
+						2023-10-25
+					</view>
+				</view>
+			</view>
+		</view>
+	</my-card>
+</view>

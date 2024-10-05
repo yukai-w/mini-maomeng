@@ -1,0 +1,9 @@
+<!-- 自定义顶部栏 -->
+<view class="nav-bar" style="height:{{navBarHeight }}px;">
+	<van-search class="search" value="{{ searchValue }}" placeholder="带豹回家" use-right-icon-slot background="#121212" style="height:{{menuHeight}}px; min-height:{{menuHeight}}px; line-height:{{menuHeight}}px; left:{{menuRight+33}}rpx; top:{{menuTop}}px;">
+		<van-icon slot="right-icon" name="search" />
+	</van-search>
+
+</view>
+<!-- 占位，高度与顶部栏一样 -->
+<view style="height:{{navBarHeight}}px;"></view>

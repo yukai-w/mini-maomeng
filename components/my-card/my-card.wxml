@@ -1,0 +1,9 @@
+<!--components/my-card/my-card.wxml-->
+
+<view>
+	<view class="title">
+		<view class="text">{{text}}</view>
+		<view class="showMore" wx:if="{{isShow}}">查看更多 ></view>
+	</view>
+	<slot></slot>
+</view>

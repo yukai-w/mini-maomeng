@@ -1,0 +1,23 @@
+<!-- components/water-fall/water-fall.wxml -->
+<view class="wrapper">
+	<view class="waterfall" id="list">
+		<view id="left-column" class="column">
+			<view wx:for="{{leftList}}" wx:key="index" class="item">
+				<image src="{{item.homepageImage}}" mode="widthFix" class="pic" wx:if="{{defaultSlot}}" data-src="{{item.homepageImage}}" />
+				<view class="text">
+					<view class="title">{{item.projectName}}</view>
+					<text class="multilineText">{{item.homepageDescription}}</text>
+				</view>
+			</view>
+		</view>
+		<view id="right-column" class="column">
+			<view wx:for="{{rightList}}" wx:key="index" class="item">
+				<image src="{{item.homepageImage}}" mode="widthFix" class="pic" wx:if="{{defaultSlot}}" data-src="{{item.homepageImage}}" />
+				<view class="text">
+					<view class="title">{{item.projectName}}</view>
+					<text class="multilineText">{{item.homepageDescription}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

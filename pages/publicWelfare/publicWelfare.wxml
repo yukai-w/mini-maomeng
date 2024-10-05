@@ -1,0 +1,19 @@
+<!--pages/publicWelfare/publicWelfare.wxml-->
+<view class="publicWelfare">
+	<!-- 每一个公益项目 -->
+	<view class="publicWelfareItem" wx:for="{{publicWelfareList}}" wx:if="{{publicWelfareList.length > 0}}" wx:key="id">
+		<image src="{{baseUrl + item.homepageImage}}" />
+		<!-- 播放按钮 -->
+		<image src="/images/play.png" class="play" mode="" />
+		<!-- 遮罩层 -->
+		<view class="mask">
+			<view class="info">
+				<view class="title">带豹回家</view>
+				<view>
+					<image src="/images/leopardTownshipField.svg" mode="" />
+				</view>
+			</view>
+		</view>
+	</view>
+
+</view>
